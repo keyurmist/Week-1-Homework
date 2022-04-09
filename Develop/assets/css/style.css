@@ -1,3 +1,4 @@
+/* Page wide styles */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,6 +7,17 @@
 
 body {
     background-color: #d9dcd6;
+}
+
+/* Every text marked with <a> will have this color */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Every line marked with <p> will have this font size */
+p {
+    font-size: 16px;
 }
 
 /* Header */
@@ -39,22 +51,15 @@ body {
 }
 
 .header nav ul li {
-    display: inline-block;
+    /* This shows all the navigation texts are on the same line */
+    display: inline-block;  
     margin-left: 25px;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
 }
 
 /* Section */
 
 .hero {
+    /* This shows the size and margins of the main image on the html */
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -63,11 +68,13 @@ p {
     background-position: center;
 }
 
+/* Any tag with this class will appear on the left */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Any tag with this class will appear on the right */
 .float-right {
     float: right;
     margin-left: 25px;
@@ -76,6 +83,7 @@ p {
 
 /* Section */
 
+/* Changed classes on HTML to this class so more parts are styled with these specific styles */
 .content {
     width: 75%;
     display: inline-block;
